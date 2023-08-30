@@ -1,0 +1,148 @@
+/*Configure main body of page to have a set background, padding from top and bottom only and font*/
+body {
+  background-color: lightgray;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  }
+
+/*Set the header to have set width, height, font color, background color so it pops from body of page. Also fix it to top of page and keep on page when scrolling*/
+header{
+  height: 40px;
+  width: 100%;
+  background-color: gray;
+  color: black;
+  border-bottom: solid black;
+  position: fixed;
+  top: 0;
+}
+
+/*set the display to wrap if need it and space the content with a bit of padding around it all*/
+header #headsection{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:10px;
+
+}
+
+/*set a bit of padding and want the list to be flexable*/
+#navlist{
+  display: flex;
+  padding: 10px;
+}
+
+/*set a bit of padding around list items and also want a image in front of each list item*/
+#navlist li::before{
+  content: '🇺🇸';
+  padding: 2px;
+}
+
+/*set list items to be a font of white*/
+#navlist li a{
+  color: white;
+}
+
+/*controls the main section to be flexable and wrap with 0 margin on top and bottom but auto margin left and right*/
+main{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+} 
+
+/*set the divs to be a certian width and height but flexable*/
+div{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+/*set a bit of padding around container area*/
+container{
+  padding: 10px;
+}
+
+/*set a bit of padding around li items in the background element*/
+#backgroundlist li{
+  padding: 5px;
+}
+
+/*set a bit of padding around paragragh*/
+p{
+  padding: 2px;
+}
+
+/*change the font color of words inside the span tag*/
+span{
+  color: blue;
+}
+
+/*set width, height and padding around any image added to page*/
+img{
+  width: 25%;
+  height: 80%;
+  padding: 10px;
+}
+
+/*set the height width fix the position of the footer with same background of header, set a border on top only with some padding*/
+footer{
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  background-color: gray;
+  color: white;
+  text-align: left;
+  border-top: solid black;
+  bottom: 0;
+  padding: 10px;
+}
+
+/*set width and display flex with even spacing between items in these two sections*/
+#footsection #contactlist{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*need a bit of padding around these elements*/
+#footsection #contactlist #con, #phone, #email, #linkin, #navlist{
+  padding-right: 10px
+}
+
+/*Change font color to white of header when screen down sizes*/
+@media screen and (max-width: 768px) {
+  header {
+    color: white;
+  }
+}
+
+/*change font color of footer when screen downsizes and adjust image width and height*/
+@media screen and (max-width: 587px) {
+  footer {
+    color: black;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+/*Change spacing for header height to keep items inside header area on smaller screen and adjust font color of footer and image width and height.*/
+@media screen and (max-width: 400px) {
+  header {
+    height: 60px;
+  }
+  footer {
+    color: black;
+  }
+  img{ 
+    width: 100%;
+    height: 100%;
+  }
+  
+}
