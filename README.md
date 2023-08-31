@@ -1,6 +1,4 @@
-# SB-Challenge-2-ASU
-
-Profile
+# Profile
 
 objective 
 
@@ -13,7 +11,7 @@ Inorder to create a page we need to setup the following
     a. Readme.md
     b. reset style.css
     c. style.css
-    d. Profile.html
+    d. Index.html
     e. Images Folder
         1. Place headshoot or images of webpages we worked
 
